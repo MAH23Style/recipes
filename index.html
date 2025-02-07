@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAH2's Recipe Finder</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="icon.png" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-brand">MAH2's Recipe Finder</div>
+      <div class="navbar-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar-menu">
+        <li class="navbar-item">
+          <a href="#" class="navbar-link" onclick="window.location.reload();"
+            >Home</a
+          >
+        </li>
+        <li class="navbar-item">
+          <a
+            href="https://www.simplyrecipes.com/"
+            class="navbar-link"
+            target="_blank"
+            >More Recipes</a
+          >
+        </li>
+        <li class="navbar-item">
+          <a href="#about" class="navbar-link">About</a>
+        </li>
+        <li class="navbar-item">
+          <a href="contact.html" class="navbar-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <div class="search-container">
+        <input
+          type="text"
+          class="search-bar"
+          id="search-bar"
+          placeholder="Search for recipes..."
+          autocomplete="off"
+        />
+        <button class="search-button" id="search-button">Search</button>
+      </div>
+    </div>
+
+    <section id="about" class="about-section">
+      <h2>About MAH2's Recipe Finder</h2>
+      <p>
+        Welcome to MAH2's Recipe Finder! Find delicious recipes from around the
+        world—quick meals, gourmet dishes, healthy options, and more. Let’s make
+        cooking fun and easy! This is all a lot of speaking for no reason
+      </p>
+    </section>
+
+    <section class="recipe-results" id="recipe-results">
+      <h2>Search Results:</h2>
+      <div class="recipes-container" id="recipes-container"></div>
+    </section>
+
+    <footer class="footer">
+      <p id="footer">Mohammed Amer,</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
